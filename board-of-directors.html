@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Directors – भारतीय महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. निघोज</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ── Page-specific styles ── */
+        .bod-hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #6a0032 100%);
+            padding: 60px 0 50px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .bod-hero h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .bod-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        .bod-hero .divider {
+            background-color: var(--secondary-color);
+            margin: 15px auto;
+        }
+
+        .bod-section {
+            padding: 70px 0;
+            background: var(--light-bg);
+        }
+
+        /* Grid */
+        .bod-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 35px;
+        }
+
+        /* Card */
+        .bod-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        .bod-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.14);
+        }
+
+        .bod-card-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
+
+        .bod-card-body {
+            padding: 20px 16px 24px;
+        }
+
+        .bod-card-body h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .bod-card-body .designation {
+            font-size: 13px;
+            color: var(--body-text);
+            font-weight: 400;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary-color);
+            background: var(--white);
+            border: 2px solid var(--primary-color);
+            padding: 9px 20px;
+            border-radius: 6px;
+            transition: background 0.25s, color 0.25s;
+        }
+
+        .back-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .bod-hero h1 {
+                font-size: 26px;
+            }
+
+            .bod-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 20px;
+            }
+
+            .bod-card-img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── Top Bar ── -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:9322947764"><i class="fas fa-phone-alt"></i> 9322947764</a>
+                    <a href="mailto:ahilyanagarpatsanstha@gmail.com"><i class="fas fa-envelope"></i>
+                        ahilyanagarpatsanstha@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ahilyanagar_patsanstha_2025/?igsh=MTYzbG83Nmh0aHF3eg%3D%3D#"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="lang-switch">Marathi / <strong>English</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Header ── -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="IMG-20250509-WA0011.jpg.jpeg" alt="Logo" class="logo-circle">
+                        <div class="logo-text-box">
+                            <span class="logo-text-main">भारतीय महिला</span>
+                            <span class="logo-text-sub">ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. निघोज</span>
+                        </div>
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── Nav ── -->
+    <nav class="main-nav" id="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="board-of-directors.html" class="active">Board of Directors</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Loans <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#loans-advances">Home Loan</a></li>
+                        <li><a href="index.html#loans-advances">Vehicle Loan</a></li>
+                        <li><a href="index.html#loans-advances">Gold Loan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Deposits <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#saving-deposit">Saving Deposit Account</a></li>
+                        <li><a href="index.html#term-deposit">Term Deposit</a></li>
+                        <li><a href="index.html#recurring-deposit">Recurring Deposit</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#loans-advances">Loans & Advances</a></li>
+                        <li><a href="index.html#services-info">Web-Base Core Banking</a></li>
+                        <li><a href="index.html#estatement-facility">E-Statement Facility</a></li>
+                        <li><a href="index.html#rtgs-neft-imps">RTGS/NEFT/IMPS</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#charges">Charges</a></li>
+                <li><a href="index.html" class="open-emi-modal">EMI Calculator</a></li>
+                <li><a href="#">Branches</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── Hero Banner ── -->
+    <div class="bod-hero">
+        <div class="container">
+            <h1>Board of Directors</h1>
+            <div class="divider"></div>
+            <p>भारतीय महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. निघोज</p>
+        </div>
+    </div>
+
+    <!-- ── Directors Grid ── -->
+    <section class="bod-section">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+
+            <div class="bod-grid">
+
+                <!-- Director 1 – Chairperson first -->
+                <div class="bod-card">
+                    <img src="body/FINAL/सौ. आरती प्रविण पावडे.png" alt="सौ. आरती प्रविण पावडे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. आरती प्रविण पावडे</h3>
+                        <p class="designation">चेअरमन</p>
+                    </div>
+                </div>
+
+                <!-- Director 2 -->
+                <div class="bod-card">
+                    <img src="body/FINAL/SULABAI GADGE.png" alt="सौ. सुलाबाई दत्तात्रय गाडगे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. सुलाबाई दत्तात्रय (तात्या) गाडगे</h3>
+                        <p class="designation">व्हा. चेअरमन</p>
+                    </div>
+                </div>
+
+                <!-- Director 3 (was 9) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/nilima galande.png" alt="सौ. निलिमा मच्छिंद्र गलांडे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. निलिमा मच्छिंद्र गलांडे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 4 (was 8) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/monika galande.png" alt="सौ. मोनिका गलांडे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. मोनिका स्वप्निल गलांडे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 5 (was 3) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/pratibha bhosale.png" alt="डॉ. सौ. प्रतिभा सागर भोसले" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>डॉ. सौ. प्रतिभा सागर भोसले</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 6 (was 12) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/varsha pavade.png" alt="सौ. वर्षा राजिब पावडे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. वर्षा राजीव पावडे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 7 (unchanged) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/manjusha gadge'.png" alt="सौ. मंजुषा विठ्ठल गाडगे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. मंजुषा विठ्ठल गाडगे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 8 (was 10) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/poonam mokashi.png" alt="सौ. पूनम प्रविण मोकाशी" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. पुनम प्रविण मोकाशी</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 9 (was 4) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/ANITA KAD.png" alt="सौ. अनिता अण्णा कड" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. अनिता अण्णा कड</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 10 (was 6) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/MANgal manchare.png" alt="सौ. मंगल सुभाष मंचरे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. मंगल सुभाष मंचरे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 11 (was 5) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/HAUSABAI ROKADE.png" alt="सौ. हौसाबाई रंगनाथ रोकडे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>सौ. हौसाबाई रंगनाथ रोकडे</h3>
+                        <p class="designation">संचालिका</p>
+                    </div>
+                </div>
+
+                <!-- Director 12 (was 11) -->
+                <div class="bod-card">
+                    <img src="body/FINAL/tukaram khodade.png" alt="श्री. तुकाराम तुळशिराम खोडदे" class="bod-card-img">
+                    <div class="bod-card-body">
+                        <h3>श्री. तुकाराम तुळशिराम खोडदे</h3>
+                        <p class="designation">व्यवस्थापक</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>भारतीय महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. निघोज is committed to financial growth and
+                        stability for all its members.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="board-of-directors.html">Board of Directors</a></li>
+                        <li><a href="index.html#charges">Charges</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#rtgs-neft-imps">NEFT / RTGS</a></li>
+                        <li><a href="index.html#estatement-facility">E-Statement</a></li>
+                        <li><a href="index.html#services-info">Core Banking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-map-marker-alt"></i> Head Office - Nighoj,<br>Tal Parner, Dist Ahilyanagar.
+                        </li>
+                        <li><i class="fas fa-phone"></i> +91 9322947764</li>
+                        <li><i class="fas fa-envelope"></i> ahilyanagarpatsanstha@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 भारतीय महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. निघोज, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const navList = document.querySelector('.nav-list');
+        if (mobileBtn && navList) {
+            mobileBtn.addEventListener('click', () => {
+                navList.classList.toggle('active');
+                const icon = mobileBtn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
